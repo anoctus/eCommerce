@@ -1,0 +1,22 @@
+{
+  "name": "ecommerce",
+  "version": "0.1.0",
+  "description": "theshop",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anoctus/eCommerce.git"
+  },
+  "author": "Andras Balint",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anoctus/eCommerce/issues"
+  },
+  "homepage": "https://github.com/anoctus/eCommerce#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
