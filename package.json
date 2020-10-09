@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "theshop",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node server/server",
     "server": "nodemon server/server",
