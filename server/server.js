@@ -6,7 +6,7 @@ const server = express()
 const port = process.env.PORT || 5000
 
 server.get('/', (req, res) => {
-  res.send('hello')
+  res.send('hello!')
 })
 
 server.get('/api/products', (req, res) => {
