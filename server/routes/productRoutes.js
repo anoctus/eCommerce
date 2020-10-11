@@ -17,15 +17,12 @@ router.get('/', asyncHandler(async (req, res) => {
 // @access Public
 router.get('/:id', asyncHandler(async (req, res) => {
   const id = req.params.id
-  if (id.match(/^[0-9a-fA-F]{24}$/)) { // Check that ObjectId is a 24 hex character string
-    const product = await Product.findById(id)
-    if (product) {
-      res.json(product)
-    } else {
-      res.status(404).json({ message: 'Product not found' })
-    }  
+  const product = await Product.findById(id)
+  if (product) {
+    res.json(product)
   } else {
-    res.status(404).json({ message: 'Product not found' })
+    res.status(404)
+    throw new Error('Product not found')
   }  
 }))
 
