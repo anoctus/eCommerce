@@ -6,8 +6,8 @@ const Loader = () => {
     <Spinner
       animation='border'
       role='status'
-      stle={{
-        width: '100xp',
+      style={{
+        width: '100px',
         height: '100px',
         margin: 'auto',
         display: 'block',
